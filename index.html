@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Link for font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="Assets/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SongKong - World's Trending Songs For Free</title>
+  </head>
+
+  <body>
+    <!-- Code for Navbar -->
+
+    <header id="header-container">
+      <nav id="navbar">
+        <img src="Assets/mplogo.png" alt="Logo" />
+        <li><a href="">HOME</a></li>
+        <li><a href="">PODCASTS</a></li>
+        <li><a href="">TRENDING</a></li>
+        <li><a href="">DOWNLOAD</a></li>
+
+        <!-- Form inside the navbar for searching -->
+
+        <form action="">
+          <i class="fas fa-search"></i>
+          <input
+            type="text"
+            name="search"
+            placeholder="Search for music you love!"
+          />
+        </form>
+        <li><a href="" id="li-sign-in">SIGN-IN</a></li>
+        <i class="fas fa-bars fa-2x"></i>
+      </nav>
+    </header>
+
+    <!-- Upper-main-container: Divided into left and right section
+    Left Section: Trending Images + Artists + Latest Release
+    Right Section: Queue with overflow auto -->
+
+    <main id="main-upper-container">
+      <section id="left">
+        <!-- Trending Images -->
+
+        <div id="trending-images">
+          <img
+            src="https://img.wynk.in/unsafe/720x251/filters:no_upscale():format(webp)/https://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/Full-Album--83-FeaturedBanner.jpg"
+            alt=""
+          />
+
+          <img
+            src="https://img.wynk.in/unsafe/720x251/filters:no_upscale():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/61c18ea270cf3a2aebf5c74b/BANNER_107193544556131.jpeg"
+            alt=""
+          />
+          <img
+            src="https://img.wynk.in/unsafe/720x251/filters:no_upscale():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/61a4ac47e1c115425f673626/BANNER_120980564420717.png"
+            alt=""
+          />
+        </div>
+
+        <!-- Recommended Artists -->
+
+        <h1 class="h-1">Recommended Artists</h1>
+        <div id="recommended-artists">
+          <div class="rec-artists-name">
+            <a href="singer-1.html">
+              <img
+                src="https://vz.cnwimg.com/thumb-1200x/wp-content/uploads/2020/02/jb.png"
+                alt=""
+            /></a>
+            <p>Justin Bieber</p>
+          </div>
+
+          <div class="rec-artists-name">
+            <a href="singer-2.html"
+              ><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq-SuykXnYM-q0FEvVqu_epXw_CayeQlmb8A&usqp=CAU"
+                alt=""
+            /></a>
+            <p>Ed-Sheeran</p>
+          </div>
+
+          <div class="rec-artists-name">
+            <a href="singer-3.html"
+              ><img
+                src="https://lastfm.freetls.fastly.net/i/u/770x0/54e317a3d21dcd2591f7e2bd4210082f.jpg"
+                alt=""
+            /></a>
+            <p>Charlie Puth</p>
+          </div>
+
+          <div class="rec-artists-name">
+            <a href="singer-4.html"
+              ><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNBJ0XO2FCqn2xFFxDSeT5vZxW9ynCZZJqhA&usqp=CAU"
+                alt=""
+            /></a>
+            <p>Badshah</p>
+          </div>
+
+          <div class="rec-artists-name">
+            <a href="singer-5.html"
+              ><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdeJZ0NPoifezCO5qkBp__-qTy0eychKprJg&usqp=CAU"
+                alt=""
+            /></a>
+            <p>Bruno Mars</p>
+          </div>
+
+          <div class="rec-artists-name">
+            <a href="singer-6.html"
+              ><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdLcuFFugvDn-00thXWvJ-Ez9Tp7EqTtDzjg&usqp=CAU"
+                alt=""
+            /></a>
+            <p>Diljit Dosanjh</p>
+          </div>
+        </div>
+
+        <!-- It will display when screen size will become 1000px but before that its display will become none. -->
+        <div id="singers-playlist-left">
+          <div id="list-1" class="list">
+            <p>01</p>
+            <img
+              src="https://i.ytimg.com/vi/kTJczUoc26U/maxresdefault.jpg"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Stay</p>
+              <p class="sm-p">Justin Bieber</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-2" class="list">
+            <p>02</p>
+            <img
+              src="https://i.ytimg.com/vi/V3eqjxd3O0U/maxresdefault.jpg"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Need To Know</p>
+              <p class="sm-p">Doja Cat</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-3" class="list">
+            <p>03</p>
+            <img
+            src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3yhT_dhplYoUmITilx1-BVaoXXDpoU_yznA&usqp=CAU"
+            alt="">
+
+            <div class="sa-about">
+              <p>Dynamite</p>
+              <p class="sm-p">BTS</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-4" class="list">
+            <p>04</p>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX1H0XWFVIEGPh0vOcoBFV2NckG-1hxnwChQ&usqp=CAU"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Sugar Crush</p>
+              <p class="sm-p">ElyOtto</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-5" class="list">
+            <p>05</p>
+            <img
+              src="https://i.ytimg.com/vi/kJQP7kiw5Fk/maxresdefault.jpg"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Despacito</p>
+              <p class="sm-p">Luis Fonsi</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-6" class="list">
+            <p>06</p>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3h_feZf2Rj2SFzkCrVeqxRuYC4lHwe7frpQ&usqp=CAU"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Someone Like You</p>
+              <p class="sm-p">Adele</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-7" class="list">
+            <p>07</p>
+            <img
+              src="https://i.ytimg.com/vi/kTJczUoc26U/maxresdefault.jpg"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Stay</p>
+              <p class="sm-p">Justin Bieber</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-8" class="list">
+            <p>08</p>
+            <img
+              src="https://i.ytimg.com/vi/V3eqjxd3O0U/maxresdefault.jpg"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Need To Know</p>
+              <p class="sm-p">Doja Cat</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-9" class="list">
+            <p>09</p>
+            <img
+            src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3yhT_dhplYoUmITilx1-BVaoXXDpoU_yznA&usqp=CAU"
+            alt="">
+
+            <div class="sa-about">
+              <p>Dynamite</p>
+              <p class="sm-p">BTS</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-10" class="list">
+            <p>10</p>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX1H0XWFVIEGPh0vOcoBFV2NckG-1hxnwChQ&usqp=CAU"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Sugar Crush</p>
+              <p class="sm-p">ElyOtto</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-11" class="list">
+            <p>11</p>
+            <img
+              src="https://i.ytimg.com/vi/kJQP7kiw5Fk/maxresdefault.jpg"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Despacito</p>
+              <p class="sm-p">Luis Fonsi</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-12" class="list">
+            <p>12</p>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3h_feZf2Rj2SFzkCrVeqxRuYC4lHwe7frpQ&usqp=CAU"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Someone Like You</p>
+              <p class="sm-p">Adele</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-13" class="list">
+            <p>13</p>
+            <img
+              src="https://i.ytimg.com/vi/kTJczUoc26U/maxresdefault.jpg"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Stay</p>
+              <p class="sm-p">Justin Bieber</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-14" class="list">
+            <p>14</p>
+            <img
+              src="https://i.ytimg.com/vi/V3eqjxd3O0U/maxresdefault.jpg"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Need To Know</p>
+              <p class="sm-p">Doja Cat</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-15" class="list">
+            <p>15</p>
+            <img
+            src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3yhT_dhplYoUmITilx1-BVaoXXDpoU_yznA&usqp=CAU"
+            alt="">
+
+            <div class="sa-about">
+              <p>Dynamite</p>
+              <p class="sm-p">BTS</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-16" class="list">
+            <p>16</p>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX1H0XWFVIEGPh0vOcoBFV2NckG-1hxnwChQ&usqp=CAU"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Sugar Crush</p>
+              <p class="sm-p">ElyOtto</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-17" class="list">
+            <p>17</p>
+            <img
+              src="https://i.ytimg.com/vi/kJQP7kiw5Fk/maxresdefault.jpg"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Despacito</p>
+              <p class="sm-p">Luis Fonsi</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-18" class="list">
+            <p>18</p>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3h_feZf2Rj2SFzkCrVeqxRuYC4lHwe7frpQ&usqp=CAU"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Someone Like You</p>
+              <p class="sm-p">Adele</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-19" class="list">
+            <p>19</p>
+            <img
+              src="https://i.ytimg.com/vi/kTJczUoc26U/maxresdefault.jpg"
+              alt=""
+            />
+            <div class="sa-about">
+              <p>Stay</p>
+              <p class="sm-p">Justin Bieber</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-20" class="list">
+            <p>20</p>
+            <img
+              src="https://i.ytimg.com/vi/V3eqjxd3O0U/maxresdefault.jpg"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Need To Know</p>
+              <p class="sm-p">Doja Catr</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-21" class="list">
+            <p>21</p>
+            <img
+            src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3yhT_dhplYoUmITilx1-BVaoXXDpoU_yznA&usqp=CAU"
+            alt="">
+
+            <div class="sa-about">
+              <p>Dynamite</p>
+              <p class="sm-p">BTS</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-22" class="list">
+            <p>22</p>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX1H0XWFVIEGPh0vOcoBFV2NckG-1hxnwChQ&usqp=CAU"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Sugar Crush</p>
+              <p class="sm-p">ElyOtto</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-23" class="list">
+            <p>23</p>
+            <img
+              src="https://i.ytimg.com/vi/kJQP7kiw5Fk/maxresdefault.jpg"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Despacito</p>
+              <p class="sm-p">Luis Fonsi</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-24" class="list">
+            <p>24</p>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3h_feZf2Rj2SFzkCrVeqxRuYC4lHwe7frpQ&usqp=CAU"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Someone Like You</p>
+              <p class="sm-p">Adele</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+
+        <!-- Latest Release Column -->
+
+        <h1 class="h-1">Latest Release</h1>
+        <div id="latest-release">
+          <div id="lat-rel-card-1" class="card">
+            <img
+              src="https://i.ytimg.com/vi/kJQP7kiw5Fk/maxresdefault.jpg"
+              alt=""
+            />
+            <div class="song-name">
+              <p>Despacito</p>
+              <i class="fas fa-music"></i>
+            </div>
+            <div class="song-view">
+              <p>39M</p>
+              <i class="far fa-eye"></i>
+            </div>
+            <p>Jan 13, 2016</p>
+            <div class="song-btn">
+              <a href="#btn-grp"><button class="box-btn">More</button></a>
+              <a href="#des"><button class="box-btn">Play</button></a>
+            </div>
+          </div>
+          <div id="lat-rel-card-2" class="card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWwHuZ8WMj2oGqNRzvQ5DmWeCVIHLYhQl3lw&usqp=CAU"
+              alt=""
+            />
+            <div class="song-name">
+              <p>Shape OF You</p>
+              <i class="fas fa-music"></i>
+            </div>
+            <div class="song-view">
+              <p>31M</p>
+              <i class="far fa-eye"></i>
+            </div>
+            <p>July 23, 2019</p>
+            <div class="song-btn">
+              <a href="#btn-grp"><button class="box-btn">More</button></a>
+              <a href="#shape"><button class="box-btn">Play</button></a>
+            </div>
+          </div>
+          <div id="lat-rel-card-3" class="card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3h_feZf2Rj2SFzkCrVeqxRuYC4lHwe7frpQ&usqp=CAU"
+              alt=""
+            />
+            <div class="song-name">
+              <p>SomeOne Like You</p>
+              <i class="fas fa-music"></i>
+            </div>
+            <div class="song-view">
+              <p>39M</p>
+              <i class="far fa-eye"></i>
+            </div>
+            <p>Feb 23, 2014</p>
+            <div class="song-btn">
+              <a href="#btn-grp"><button class="box-btn">More</button></a>
+              <a href="#someone"><button class="box-btn">Play</button></a>
+            </div>
+          </div>
+          <div id="lat-rel-card-4" class="card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPI5dCvPPkh7Z69FTLggCR3S1c9uE7M2Dz9w&usqp=CAU"
+              alt=""
+            />
+            <div class="song-name">
+              <p>Vilen-Ek Raat</p>
+              <i class="fas fa-music"></i>
+            </div>
+            <div class="song-view">
+              <p>10M</p>
+              <i class="far fa-eye"></i>
+            </div>
+            <p>July 28, 2018</p>
+            <div class="song-btn">
+              <a href="#btn-grp"><button class="box-btn">More</button></a>
+              <a href="#ekraat"><button class="box-btn">Play</button></a>
+            </div>
+          </div>
+          <div id="lat-rel-card-5" class="card">
+            <img
+              src="https://i.pinimg.com/564x/80/eb/2a/80eb2a17f766f6803504e695462293b0.jpg"
+              alt=""
+            />
+            <div class="song-name">
+              <p>Brown Munde</p>
+              <i class="fas fa-music"></i>
+            </div>
+            <div class="song-view">
+              <p>19M</p>
+              <i class="far fa-eye"></i>
+            </div>
+            <p>Jan 23, 2020</p>
+            <div class="song-btn">
+              <a href="#btn-grp"><button class="box-btn">More</button></a>
+              <a href="#brown"><button class="box-btn">Play</button></a>
+            </div>
+          </div>
+          <div id="lat-rel-card-6" class="card">
+            <img
+              src="https://cdn.onlinesangeet.com//wp-content/uploads/2021/09/rataan-lambiyan.jpg"
+              alt=""
+            />
+            <div class="song-name">
+              <p>Raatan</p>
+              <i class="fas fa-music"></i>
+            </div>
+            <div class="song-view">
+              <p>9M</p>
+              <i class="far fa-eye"></i>
+            </div>
+            <p>Dec 12, 2020</p>
+            <div class="song-btn">
+              <a href="#btn-grp"><button class="box-btn">More</button></a>
+              <a href="#raatan"><button class="box-btn">Play</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right Most Section which is Queue -->
+
+      <section id="right">
+        <div id="top-right">
+          <div id="fixed-top-right">
+            <h1 id="queue">Queue</h1>
+            <select name="addition" id="select-queue">
+              <option value="rec-added">Recently-Added</option>
+              <option value="oldest-added">Oldest-Added</option>
+              <option value="alphabetically">Alphabetically</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="singers-playlist">
+          <div id="list-1" class="list">
+            <p>01</p>
+            <img
+              src="https://i.ytimg.com/vi/kTJczUoc26U/maxresdefault.jpg"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Stay</p>
+              <p class="sm-p">Justin Bieber</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-2" class="list">
+            <p>02</p>
+            <img
+              src="https://i.ytimg.com/vi/V3eqjxd3O0U/maxresdefault.jpg"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Need To Know</p>
+              <p class="sm-p">Doja Cat</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-3" class="list">
+            <p>03</p>
+            <img
+            src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3yhT_dhplYoUmITilx1-BVaoXXDpoU_yznA&usqp=CAU"
+            alt="">
+
+            <div class="sa-about">
+              <p>Dynamite</p>
+              <p class="sm-p">BTS</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-4" class="list">
+            <p>04</p>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX1H0XWFVIEGPh0vOcoBFV2NckG-1hxnwChQ&usqp=CAU"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Sugar Crush</p>
+              <p class="sm-p">ElyOtto</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-5" class="list">
+            <p>05</p>
+            <img
+              src="https://i.ytimg.com/vi/kJQP7kiw5Fk/maxresdefault.jpg"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Despacito</p>
+              <p class="sm-p">Luis Fonsi</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-6" class="list">
+            <p>06</p>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3h_feZf2Rj2SFzkCrVeqxRuYC4lHwe7frpQ&usqp=CAU"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Someone Like You</p>
+              <p class="sm-p">Adele</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-7" class="list">
+            <p>07</p>
+            <img
+              src="https://i.ytimg.com/vi/kTJczUoc26U/maxresdefault.jpg"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Stay</p>
+              <p class="sm-p">Justin Bieber</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-8" class="list">
+            <p>08</p>
+            <img
+              src="https://i.ytimg.com/vi/V3eqjxd3O0U/maxresdefault.jpg"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Need To Know</p>
+              <p class="sm-p">Doja Cat</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-9" class="list">
+            <p>09</p>
+            <img
+            src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3yhT_dhplYoUmITilx1-BVaoXXDpoU_yznA&usqp=CAU"
+            alt="">
+
+            <div class="sa-about">
+              <p>Dynamite</p>
+              <p class="sm-p">BTS</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-10" class="list">
+            <p>10</p>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX1H0XWFVIEGPh0vOcoBFV2NckG-1hxnwChQ&usqp=CAU"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Sugar Crush</p>
+              <p class="sm-p">ElyOtto</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-11" class="list">
+            <p>11</p>
+            <img
+              src="https://i.ytimg.com/vi/kJQP7kiw5Fk/maxresdefault.jpg"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Despacito</p>
+              <p class="sm-p">Luis Fonsi</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-12" class="list">
+            <p>12</p>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3h_feZf2Rj2SFzkCrVeqxRuYC4lHwe7frpQ&usqp=CAU"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Someone Like You</p>
+              <p class="sm-p">Adele</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-13" class="list">
+            <p>13</p>
+            <img
+              src="https://i.ytimg.com/vi/kTJczUoc26U/maxresdefault.jpg"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Stay</p>
+              <p class="sm-p">Justin Bieber</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-14" class="list">
+            <p>14</p>
+            <img
+              src="https://i.ytimg.com/vi/V3eqjxd3O0U/maxresdefault.jpg"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Need To Know</p>
+              <p class="sm-p">Doja Cat</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-15" class="list">
+            <p>15</p>
+            <img
+            src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3yhT_dhplYoUmITilx1-BVaoXXDpoU_yznA&usqp=CAU"
+            alt="">
+
+            <div class="sa-about">
+              <p>Dynamite</p>
+              <p class="sm-p">BTS</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-16" class="list">
+            <p>16</p>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX1H0XWFVIEGPh0vOcoBFV2NckG-1hxnwChQ&usqp=CAU"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Sugar Crush</p>
+              <p class="sm-p">ElyOtto</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-17" class="list">
+            <p>17</p>
+            <img
+              src="https://i.ytimg.com/vi/kJQP7kiw5Fk/maxresdefault.jpg"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Despacito</p>
+              <p class="sm-p">Luis Fonsi</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-18" class="list">
+            <p>18</p>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3h_feZf2Rj2SFzkCrVeqxRuYC4lHwe7frpQ&usqp=CAU"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Someone Like You</p>
+              <p class="sm-p">Adele</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-19" class="list">
+            <p>19</p>
+            <img
+              src="https://i.ytimg.com/vi/kTJczUoc26U/maxresdefault.jpg"
+              alt=""
+            />
+            <div class="sa-about">
+              <p>Stay</p>
+              <p class="sm-p">Justin Bieber</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-20" class="list">
+            <p>20</p>
+            <img
+              src="https://i.ytimg.com/vi/V3eqjxd3O0U/maxresdefault.jpg"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Need To Know</p>
+              <p class="sm-p">Doja Catr</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-21" class="list">
+            <p>21</p>
+            <img
+            src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3yhT_dhplYoUmITilx1-BVaoXXDpoU_yznA&usqp=CAU"
+            alt="">
+
+            <div class="sa-about">
+              <p>Dynamite</p>
+              <p class="sm-p">BTS</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-22" class="list">
+            <p>22</p>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX1H0XWFVIEGPh0vOcoBFV2NckG-1hxnwChQ&usqp=CAU"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Sugar Crush</p>
+              <p class="sm-p">ElyOtto</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-23" class="list">
+            <p>23</p>
+            <img
+              src="https://i.ytimg.com/vi/kJQP7kiw5Fk/maxresdefault.jpg"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Despacito</p>
+              <p class="sm-p">Luis Fonsi</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <div id="list-24" class="list">
+            <p>24</p>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3h_feZf2Rj2SFzkCrVeqxRuYC4lHwe7frpQ&usqp=CAU"
+              alt=""
+            />
+
+            <div class="sa-about">
+              <p>Someone Like You</p>
+              <p class="sm-p">Adele</p>
+            </div>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Main-Bottom Container consists of
+    1) SongKong's Top English 
+    2) SongKong's Top Hindi
+    3) SongKong's Top Punjabi-->
+
+    <main id="main-bottom-container">
+      <h1 class="h-1">SongKong's Top English</h1>
+      <section id="top-english">
+        <div id="english-card-1" class="smcard">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWwHuZ8WMj2oGqNRzvQ5DmWeCVIHLYhQl3lw&usqp=CAU"
+            alt=""
+          />
+          <div class="song-name">
+            <p>Shape Of You</p>
+            <i class="fas fa-music"></i>
+          </div>
+          <div class="song-view">
+            <p>33M</p>
+            <i class="far fa-eye"></i>
+          </div>
+          <p>Jan 13, 2016</p>
+          <div class="song-btn">
+            <a href="#btn-grp"> <button class="box-btn">More</button></a>
+            <a href=".shape"><button class="box-btn">Play</button></a>
+          </div>
+        </div>
+
+        <div id="english-card-2" class="smcard">
+          <img
+            src="https://i.ytimg.com/vi/kJQP7kiw5Fk/maxresdefault.jpg"
+            alt=""
+          />
+          <div class="song-name">
+            <p>Despacito</p>
+            <i class="fas fa-music"></i>
+          </div>
+          <div class="song-view">
+            <p>39M</p>
+            <i class="far fa-eye"></i>
+          </div>
+          <p>Jan 13, 2016</p>
+          <div class="song-btn">
+            <a href="#btn-grp"><button class="box-btn">More</button></a>
+            <a href="#des"><button class="box-btn">Play</button></a>
+          </div>
+        </div>
+        <div id="english-card-3" class="smcard">
+          <img
+            src="https://cdn.onlinesangeet.com//wp-content/uploads/2021/09/rataan-lambiyan.jpg"
+            alt=""
+          />
+          <div class="song-name">
+            <p>Raatan</p>
+            <i class="fas fa-music"></i>
+          </div>
+          <div class="song-view">
+            <p>31M</p>
+            <i class="far fa-eye"></i>
+          </div>
+          <p>Jan 13, 2016</p>
+          <div class="song-btn">
+            <a href="#btn-grp"><button class="box-btn">More</button></a>
+            <a href="#raatan"><button class="box-btn">Play</button></a>
+          </div>
+        </div>
+        <div id="english-card-4" class="smcard">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3h_feZf2Rj2SFzkCrVeqxRuYC4lHwe7frpQ&usqp=CAU"
+            alt=""
+          />
+          <div class="song-name">
+            <p>SomeOne Like You</p>
+            <i class="fas fa-music"></i>
+          </div>
+          <div class="song-view">
+            <p>92M</p>
+            <i class="far fa-eye"></i>
+          </div>
+          <p>Jan 13, 2016</p>
+          <div class="song-btn">
+            <a href="#btn-grp"><button class="box-btn">More</button></a>
+            <a href="#someone"><button class="box-btn">Play</button></a>
+          </div>
+        </div>
+        <div id="english-card-5" class="smcard">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPI5dCvPPkh7Z69FTLggCR3S1c9uE7M2Dz9w&usqp=CAU"
+            alt=""
+          />
+          <div class="song-name">
+            <p>Vilen-Ek Raat</p>
+            <i class="fas fa-music"></i>
+          </div>
+          <div class="song-view">
+            <p>19M</p>
+            <i class="far fa-eye"></i>
+          </div>
+          <p>Jan 13, 2016</p>
+          <div class="song-btn">
+            <a href="#btn-grp"><button class="box-btn">More</button></a>
+            <a href="#ekraat"><button class="box-btn">Play</button></a>
+          </div>
+        </div>
+        <div id="english-card-6" class="smcard">
+          <img
+            src="https://i.pinimg.com/564x/80/eb/2a/80eb2a17f766f6803504e695462293b0.jpg"
+            alt=""
+          />
+          <div class="song-name">
+            <p>Brown Munde</p>
+            <i class="fas fa-music"></i>
+          </div>
+          <div class="song-view">
+            <p>92M</p>
+            <i class="far fa-eye"></i>
+          </div>
+          <p>Jan 13, 2016</p>
+          <div class="song-btn">
+            <a href="#btn-grp"><button class="box-btn">More</button></a>
+            <a href="#brown"><button class="box-btn">Play</button></a>
+          </div>
+        </div>
+      </section>
+
+      <h1 class="h-1">SongKong's Top Hindi</h1>
+      <section id="top-hindi">
+        <div id="hindi-card-1" class="smcard">
+          <img
+            src="https://i.pinimg.com/564x/80/eb/2a/80eb2a17f766f6803504e695462293b0.jpg"
+            alt=""
+          />
+          <div class="song-name">
+            <p>Brown Munde</p>
+            <i class="fas fa-music"></i>
+          </div>
+          <div class="song-view">
+            <p>39M</p>
+            <i class="far fa-eye"></i>
+          </div>
+          <p>Jan 13, 2016</p>
+          <div class="song-btn">
+            <a href="#btn-grp"><button class="box-btn">More</button></a>
+            <a href="#brown"><button class="box-btn">Play</button></a>
+          </div>
+        </div>
+
+        <div id="hindi-card-2" class="smcard">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPI5dCvPPkh7Z69FTLggCR3S1c9uE7M2Dz9w&usqp=CAU"
+            alt=""
+          />
+          <div class="song-name">
+            <p>Vilen-Ek Raat</p>
+            <i class="fas fa-music"></i>
+          </div>
+          <div class="song-view">
+            <p>39M</p>
+            <i class="far fa-eye"></i>
+          </div>
+          <p>Jan 13, 2016</p>
+          <div class="song-btn">
+            <a href="#btn-grp"><button class="box-btn">More</button></a>
+            <a href="#ekraat"><button class="box-btn">Play</button></a>
+          </div>
+        </div>
+        <div id="hindi-card-3" class="smcard">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3h_feZf2Rj2SFzkCrVeqxRuYC4lHwe7frpQ&usqp=CAU"
+            alt=""
+          />
+          <div class="song-name">
+            <p>SomeOne Like You</p>
+            <i class="fas fa-music"></i>
+          </div>
+          <div class="song-view">
+            <p>39M</p>
+            <i class="far fa-eye"></i>
+          </div>
+          <p>Jan 13, 2016</p>
+          <div class="song-btn">
+            <a href="#btn-grp"> <button class="box-btn">More</button></a>
+            <a href="#someone"><button class="box-btn">Play</button></a>
+          </div>
+        </div>
+        <div id="hindi-card-4" class="smcard">
+          <img
+            src="https://cdn.onlinesangeet.com//wp-content/uploads/2021/09/rataan-lambiyan.jpg"
+            alt=""
+          />
+          <div class="song-name">
+            <p>Raatan</p>
+            <i class="fas fa-music"></i>
+          </div>
+          <div class="song-view">
+            <p>39M</p>
+            <i class="far fa-eye"></i>
+          </div>
+          <p>Jan 13, 2016</p>
+          <div class="song-btn">
+            <a href="#btn-grp"><button class="box-btn">More</button></a>
+            <a href="#raatan"><button class="box-btn">Play</button></a>
+          </div>
+        </div>
+        <div id="hindi-card-5" class="smcard">
+          <img
+            src="https://i.ytimg.com/vi/kJQP7kiw5Fk/maxresdefault.jpg"
+            alt=""
+          />
+          <div class="song-name">
+            <p>Despacito</p>
+            <i class="fas fa-music"></i>
+          </div>
+          <div class="song-view">
+            <p>39M</p>
+            <i class="far fa-eye"></i>
+          </div>
+          <p>Jan 13, 2016</p>
+          <div class="song-btn">
+            <a href="#btn-grp"><button class="box-btn">More</button></a>
+            <a href="#des"><button class="box-btn">Play</button></a>
+          </div>
+        </div>
+        <div id="hindi-card-6" class="smcard">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWwHuZ8WMj2oGqNRzvQ5DmWeCVIHLYhQl3lw&usqp=CAU"
+            alt=""
+          />
+          <div class="song-name">
+            <p>Shape Of You</p>
+            <i class="fas fa-music"></i>
+          </div>
+          <div class="song-view">
+            <p>39M</p>
+            <i class="far fa-eye"></i>
+          </div>
+          <p>Jan 13, 2016</p>
+          <div class="song-btn">
+            <a href="#btn-grp"><button class="box-btn">More</button></a>
+            <a href="#shape"><button class="box-btn">Play</button></a>
+          </div>
+        </div>
+      </section>
+
+      <h1 class="h-1">SongKong's Top Punjabi</h1>
+      <section id="top-punjabi">
+        <div id="punjabi-card-1" class="smcard">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWwHuZ8WMj2oGqNRzvQ5DmWeCVIHLYhQl3lw&usqp=CAU"
+            alt=""
+          />
+          <div class="song-name">
+            <p>Shape Of You</p>
+            <i class="fas fa-music"></i>
+          </div>
+          <div class="song-view">
+            <p>39M</p>
+            <i class="far fa-eye"></i>
+          </div>
+          <p>Jan 13, 2016</p>
+          <div class="song-btn">
+            <a href="#btn-grp"><button class="box-btn">More</button></a>
+            <a href="#shape"><button class="box-btn">Play</button></a>
+          </div>
+        </div>
+
+        <div id="punjabi-card-2" class="smcard">
+          <img
+            src="https://i.ytimg.com/vi/kJQP7kiw5Fk/maxresdefault.jpg"
+            alt=""
+          />
+          <div class="song-name">
+            <p>Despacito</p>
+            <i class="fas fa-music"></i>
+          </div>
+          <div class="song-view">
+            <p>39M</p>
+            <i class="far fa-eye"></i>
+          </div>
+          <p>Jan 13, 2016</p>
+          <div class="song-btn">
+            <a href="#btn-grp"><button class="box-btn">More</button></a>
+            <a href="#des"><button class="box-btn">Play</button></a>
+          </div>
+        </div>
+        <div id="punjabi-card-3" class="smcard">
+          <img
+            src="https://cdn.onlinesangeet.com//wp-content/uploads/2021/09/rataan-lambiyan.jpg"
+            alt=""
+          />
+          <div class="song-name">
+            <p>Raatan</p>
+            <i class="fas fa-music"></i>
+          </div>
+          <div class="song-view">
+            <p>39M</p>
+            <i class="far fa-eye"></i>
+          </div>
+          <p>Jan 13, 2016</p>
+          <div class="song-btn">
+            <a href="#btn-grp"><button class="box-btn">More</button></a>
+            <a href="#raatan"><button class="box-btn">Play</button></a>
+          </div>
+        </div>
+        <div id="punjabi-card-4" class="smcard">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3h_feZf2Rj2SFzkCrVeqxRuYC4lHwe7frpQ&usqp=CAU"
+            alt=""
+          />
+          <div class="song-name">
+            <p>SomeOne Like You</p>
+            <i class="fas fa-music"></i>
+          </div>
+          <div class="song-view">
+            <p>39M</p>
+            <i class="far fa-eye"></i>
+          </div>
+          <p>Jan 13, 2016</p>
+          <div class="song-btn">
+            <a href="#btn-grp"><button class="box-btn">More</button></a>
+            <a href="#someone"><button class="box-btn">Play</button></a>
+          </div>
+        </div>
+        <div id="punjabi-card-5" class="smcard">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPI5dCvPPkh7Z69FTLggCR3S1c9uE7M2Dz9w&usqp=CAU"
+            alt=""
+          />
+          <div class="song-name">
+            <p>Vilen-Ek Raat</p>
+            <i class="fas fa-music"></i>
+          </div>
+          <div class="song-view">
+            <p>39M</p>
+            <i class="far fa-eye"></i>
+          </div>
+          <p>Jan 13, 2016</p>
+          <div class="song-btn">
+            <a href="#btn-grp"><button class="box-btn">More</button></a>
+            <a href="#ekraat"><button class="box-btn">Play</button></a>
+          </div>
+        </div>
+        <div id="punjabi-card-6" class="smcard">
+          <img
+            src="https://i.pinimg.com/564x/80/eb/2a/80eb2a17f766f6803504e695462293b0.jpg"
+            alt=""
+          />
+          <div class="song-name">
+            <p>Brown Munde</p>
+            <i class="fas fa-music"></i>
+          </div>
+          <div class="song-view">
+            <p>39M</p>
+            <i class="far fa-eye"></i>
+          </div>
+          <p>Jan 13, 2016</p>
+          <div class="song-btn">
+            <a href="#btn-grp"><button class="box-btn">More</button></a>
+            <a href="#brown"><button class="box-btn">Play</button></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Button Group's display will remain none but when song's more button is clicked 
+    then the display will change to block hence the button group will get visible -->
+
+    <div id="btn-grp">
+      <button class="btn">
+        <i class="fas fa-plus"></i>
+        <p>Add To Queue</p>
+        <a href="#none"><i class="fas fa-times"></i></a>
+      </button>
+      <button class="btn">
+        <i class="fas fa-heart"></i>
+        <p>Add To Favourites</p>
+      </button>
+      <button class="btn">
+        <i class="fas fa-info"></i>
+        <p>Get Info</p>
+      </button>
+    </div>
+
+    <!-- Song's Audio : Display will be none but when music is played then the display will 
+    get visible. -->
+
+    <div class="bottom-audio" id="des">
+      <audio controls class="audio">
+        <source src="Songs/despacito.mp3" />
+      </audio>
+      <a href="#none"><i class="fas fa-times fa-2x"></i></a>
+    </div>
+
+    <div class="bottom-audio" id="ekraat">
+      <audio controls class="audio">
+        <source src="Songs/ekraat.mp3" />
+      </audio>
+      <a href="#none"><i class="fas fa-times fa-2x"></i></a>
+    </div>
+
+    <div class="bottom-audio" id="raatan">
+      <audio controls class="audio">
+        <source src="Songs/raatan.mp3" />
+      </audio>
+      <a href="#none"><i class="fas fa-times fa-2x"></i></a>
+    </div>
+
+    <div class="bottom-audio" id="someone">
+      <audio controls class="audio">
+        <source src="Songs/someonelikeu.mp3" />
+      </audio>
+      <a href="#none"><i class="fas fa-times fa-2x"></i></a>
+    </div>
+
+    <div class="bottom-audio" id="brown">
+      <audio controls class="audio">
+        <source src="Songs/brownmunde.mp3" />
+      </audio>
+      <a href="#none"><i class="fas fa-times fa-2x"></i></a>
+    </div>
+
+    <div class="bottom-audio" id="shape">
+      <audio controls class="audio">
+        <source src="Songs/shapeofu.mp3" />
+      </audio>
+      <a href="#none"><i class="fas fa-times fa-2x"></i></a>
+    </div>
+  </body>
+</html>
+
+<!-- Footer part  Starts-->
+
+<footer id="bot-nav">
+  <li>ABOUT US</li>
+  <li>ADVERTISE WITH US</li>
+  <li>PRIVACY POLICY</li>
+  <li>TERMS OF USE</li>
+  <li>CONTACT US</li>
+  <li>FEEDBACK</li>
+  <li>HELLOTUNES</li>
+
+  <div id="bot-nav-i">
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fas fa-bars"></i>
+  </div>
+</footer>
+
+<!-- Footer Ends -->
+
+<!-- ************************************************************************************* -->
